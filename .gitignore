@@ -1,0 +1,27 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# Logs
+logs/*
+dbt_project/logs/*
+
+# DBT generated files
+dbt_project/target/
+
+# Environment variables
+config.env
+
+# Docker volumes and temporary files
+*.log
+*.pid
+*.seed
+
+# IDE files
+.idea/
+*.swp
+*.swo
+
+clickhouse-server.log
+clickhouse-server.err.log

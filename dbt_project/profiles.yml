@@ -1,0 +1,11 @@
+space_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: clickhouse
+      host: localhost
+      port: 8123
+      schema: space_db
+      database: space_db  # Явно указываем database
+      user: user
+      password: pass

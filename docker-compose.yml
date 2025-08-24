@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+     clickhouse:
+       image: clickhouse/clickhouse-server:25.7.4
+       container_name: space-clickhouse
+       ports:
+         - "8123:8123"
+         - "9000:9000"
+       ulimits:
+         nofile: 262144
+       volumes:
+         - clickhouse_data:/var/lib/clickhouse
+         - ./init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
+         - ./scripts:/init-sql-scripts
+         - ./logs:/var/log/clickhouse-server
+       env_file:
+         - config.env  
+       expose:
+         - "8123"
+         - "9000"
+       healthcheck:
+         test: ["CMD", "clickhouse-client", "-u", "${CLICKHOUSE_USER}", "--password", "${CLICKHOUSE_PASSWORD}", "--query", "SELECT 1"]
+         interval: 5s
+         timeout: 10s
+         retries: 20
+
+volumes:
+     clickhouse_data:

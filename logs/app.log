@@ -1,0 +1,24 @@
+2025-08-24 00:44:47,266 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=0, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x103e32e90>: Failed to establish a new connection: [Errno 61] Connection refused')': /?
+2025-08-24 00:44:47,267 - WARNING - Unexpected Http Driver Exception
+2025-08-24 00:44:47,267 - ERROR - Clickhouse insert error: Error HTTPConnectionPool(host='localhost', port=8123): Max retries exceeded with url: /? (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x103e32710>: Failed to establish a new connection: [Errno 61] Connection refused')) executing HTTP request attempt 1 (http://localhost:8123)
+2025-08-24 00:44:47,267 - ERROR - Process failed: Error HTTPConnectionPool(host='localhost', port=8123): Max retries exceeded with url: /? (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x103e32710>: Failed to establish a new connection: [Errno 61] Connection refused')) executing HTTP request attempt 1 (http://localhost:8123)
+2025-08-24 01:16:30,188 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=0, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1041b2e90>: Failed to establish a new connection: [Errno 61] Connection refused')': /?
+2025-08-24 01:16:30,191 - WARNING - Unexpected Http Driver Exception
+2025-08-24 01:16:30,191 - ERROR - Clickhouse connect/insert error: Error HTTPConnectionPool(host='localhost', port=8123): Max retries exceeded with url: /? (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1041b2710>: Failed to establish a new connection: [Errno 61] Connection refused')) executing HTTP request attempt 1 (http://localhost:8123). Check if Docker is running and port 8123 is open.
+2025-08-24 01:16:30,191 - ERROR - Process failed: Error HTTPConnectionPool(host='localhost', port=8123): Max retries exceeded with url: /? (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x1041b2710>: Failed to establish a new connection: [Errno 61] Connection refused')) executing HTTP request attempt 1 (http://localhost:8123)
+2025-08-24 01:26:41,565 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=0, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10285ae90>: Failed to resolve 'host.docker.internal' ([Errno 8] nodename nor servname provided, or not known)")': /?
+2025-08-24 01:26:41,566 - WARNING - Unexpected Http Driver Exception
+2025-08-24 01:26:41,566 - ERROR - Clickhouse connect/insert error: Error HTTPConnectionPool(host='host.docker.internal', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10285b4d0>: Failed to resolve 'host.docker.internal' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://host.docker.internal:8123). Check if Docker is running and port 8123 is open.
+2025-08-24 01:26:41,566 - ERROR - Process failed: Error HTTPConnectionPool(host='host.docker.internal', port=8123): Max retries exceeded with url: /? (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x10285b4d0>: Failed to resolve 'host.docker.internal' ([Errno 8] nodename nor servname provided, or not known)")) executing HTTP request attempt 1 (http://host.docker.internal:8123)
+2025-08-24 01:34:04,768 - INFO - Port 8123 on localhost is open
+2025-08-24 01:34:04,793 - INFO - Connected to Clickhouse successfully
+2025-08-24 01:34:04,813 - INFO - Inserted data: size=587 bytes at 2025-08-23 22:34:04.794706
+2025-08-24 01:34:04,813 - INFO - Data insertion successful
+2025-08-24 20:41:44,277 - INFO - Port 8123 on localhost is open
+2025-08-24 20:41:44,300 - INFO - Connected to Clickhouse successfully
+2025-08-24 20:41:44,319 - INFO - Inserted data: size=587 bytes at 2025-08-24 17:41:44.301730
+2025-08-24 20:41:44,320 - INFO - Data insertion successful
+2025-08-24 21:04:28,102 - INFO - Port 8123 on localhost is open
+2025-08-24 21:04:28,124 - INFO - Connected to Clickhouse successfully
+2025-08-24 21:04:28,141 - INFO - Inserted data: size=587 bytes at 2025-08-24 18:04:28.124617
+2025-08-24 21:04:28,141 - INFO - Data insertion successful

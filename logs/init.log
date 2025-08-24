@@ -1,0 +1,10 @@
+Starting init-db.sh at Sun Aug 24 06:03:21 PM UTC 2025
+total 12
+-rw-r--r-- 1 root root 186 Aug 23 21:38 01_create_raw_table.sql
+-rw-r--r-- 1 root root 173 Aug 23 21:38 02_create_people_table.sql
+-rw-r--r-- 1 root root 365 Aug 23 21:38 03_create_people_mv.sql
+Clickhouse is ready.
+Executing /init-sql-scripts/01_create_raw_table.sql...
+Executing /init-sql-scripts/02_create_people_table.sql...
+Executing /init-sql-scripts/03_create_people_mv.sql...
+All scripts executed successfully.

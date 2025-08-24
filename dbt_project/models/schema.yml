@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: raw  
+    database: space_db 
+    tables:
+      - name: people
+
+models:
+  - name: people_aggregated
+    columns:
+      - name: craft
+        data_tests:  
+          - not_null
+      - name: astronaut_count
+        data_tests:  
+          - not_null
